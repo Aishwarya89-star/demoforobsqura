@@ -23,16 +23,16 @@ public class LoginPageTest extends BaseClass {
 	HomePage hp;
 	UserManagementPage up;
 	
-  @Test
+  @Test(priority=1)
   public void verifySuccessfulLogin() throws IOException {
 	  lp=new LoginPage(driver);
-	  lp.login(ExcelUtilities.getStringData(0, 0, "LoginPage"),ExcelUtilities.getIntegerData(0, 1, "LoginPage"));
+	hp= lp.login(ExcelUtilities.getStringData(0, 0, "LoginPage"),ExcelUtilities.getIntegerData(0, 1, "LoginPage"));
 	  hp=new HomePage(driver);
 	  String actual=hp.getTextofWelcome();
 	  System.out.println(actual);
 	  Assert.assertTrue(actual.contains("Welcome admin,"));
   }
-  @Test(dataProvider="unsuccessfulLogin",dataProviderClass=DataProviderClass.class)
+  @Test(dataProvider="unsuccessfulLogin",dataProviderClass=DataProviderClass.class,priority=2)
   public void verifyUnsuccessfulLogin(String n,String s ){
 	  lp=new LoginPage(driver);
 	  lp.login(n,s);
@@ -41,7 +41,7 @@ public class LoginPageTest extends BaseClass {
 	  Assert.assertEquals(actual, "These credentials do not match our records.");
 	  
   }
-  @Test
+  @Test(priority=0)
   public void verifyLogoDisplayed() {
 	  lp=new LoginPage(driver);
 	 boolean bool= lp.logoDisplayed();

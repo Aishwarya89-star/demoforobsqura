@@ -17,6 +17,11 @@ public class RandomData_Utility {
 		 faker = new Faker(new Locale("en-IND"));
 			return faker.name().name();
 	 }
+	 
+	 public static int getNumber() {
+		 faker=new Faker();
+		 return faker.number().numberBetween(0, 5);
+	 }
 	 public static String getEmail() {
 
 			String alphabet = "abcdefghijklmnopqrstuvwxyz";//string created from a to z

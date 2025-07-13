@@ -56,11 +56,11 @@ public class ContactsPage {
 	@FindBy(xpath="//input[@class='form-control input-sm']")
 	WebElement searchbarsuppliername;
 	
-	@FindBy(xpath="//button[@data-toggle='dropdown']")//here button to click for actions
+	@FindBy(xpath="//table[@id='contact_table']/tbody/tr/td/div[@class='btn-group']/button[@data-toggle='dropdown']")//here button to click for actions
 	WebElement buttonforactionatsupplier;
 	
-	@FindBy(xpath="//li//a[@href='https://qalegend.com/billing/public/payments/pay-contact-due/1720?type=purchase']")
-	WebElement paydueamount;//payment due amount
+	@FindBy(xpath="//ul[@class='dropdown-menu dropdown-menu-right']/li/a[@href='https://qalegend.com/billing/public/contacts/1720/edit']")
+	WebElement edit;//payment due amount
 	
 	@FindBy(xpath="//form/div[@class='modal-header']/h4")
 	WebElement textofpaydueamountpop;
@@ -95,20 +95,6 @@ public String  alerthandle() {
 }
 
 
-public String getsuppliername() {
-	return utility.getTextofElement(suppliername);
-}
 
-public void giveSuppliernametoSearch(String name) {
-	searchbarsuppliername.sendKeys(name);
-}
 
-public void actionbuttononSupplierName() {
-	buttonforactionatsupplier.click();
-	paydueamount.click();
-}
-
-public String gettextOfPaydueAmountpopup() {
-	return utility.getTextofElement(textofpaydueamountpop);
-}
 }

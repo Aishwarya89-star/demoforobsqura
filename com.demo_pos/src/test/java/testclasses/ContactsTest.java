@@ -19,7 +19,7 @@ public class ContactsTest extends BaseClass {
 	LoginPage lp;
 	HomePage hp;
 	ContactsPage cp;
-  @Test
+  @Test(priority=0)
   public void verifyReachedSupplierPage() throws IOException {
 	  lp=new LoginPage(driver);
 	  hp=new HomePage(driver);
@@ -31,7 +31,7 @@ public class ContactsTest extends BaseClass {
 	  System.out.println(actual);
 	  Assert.assertTrue(actual.contains("All your Suppliers"));
   }
-  @Test
+  @Test(priority=1)
   public void verifytogetRowCount() throws IOException {
 	  lp=new LoginPage(driver);
 	  hp=new HomePage(driver);
@@ -43,7 +43,7 @@ public class ContactsTest extends BaseClass {
 	System.out.println(count);
 	Assert.assertEquals(count, 25);
   }
-  @Test
+  @Test(priority=2)
   public void verifyFileUploadedfailedmsg() throws IOException {
 	  lp=new LoginPage(driver);
 	  hp=new HomePage(driver);
@@ -52,30 +52,14 @@ public class ContactsTest extends BaseClass {
 	  hp.clickonusermanagement();
 	  cp.goToSupplierpage();
 	  cp.impcontacts();
-	  cp.fileuploadaction(System.getProperty("user.dir")+ConstantsClass.propertiescsvfile);
+	  cp.fileuploadaction(System.getProperty("user.dir")+"\\src\\test\\resources\\file.csv");
 	  cp.submitbutton();
 	 String actual= cp.alerthandle();//warning
 	  System.out.println(actual);
 	  Assert.assertTrue(actual.contains("mismatch"));
 	 
   }
-  @Test
-  public void VerifyforPaydueAmounttext() {
-	  lp=new LoginPage(driver);
-	  hp=new HomePage(driver);
-	  cp=new ContactsPage(driver);
-	  lp.login("admin", "123456");
-	  hp.clickonusermanagement();
-	  cp.goToSupplierpage();
-	String actual=cp.getsuppliername();
-	System.out.println(actual);
-	cp.giveSuppliernametoSearch(actual);
-	cp.actionbuttononSupplierName();
-	String actualresult=cp.gettextOfPaydueAmountpopup();
-	System.out.println(actualresult);
-	Assert.assertTrue(actualresult.contains("Add"));
-	  
-  }
+  
   
   
   

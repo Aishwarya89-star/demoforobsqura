@@ -54,7 +54,7 @@ public void presenceOfElement(WebDriver driver,int timeOut,By locator) {
 	wait.until(ExpectedConditions.presenceOfElementLocated(locator));
 }
 
-public void waitForalert(WebDriver driver, int timeout,WebElement element) {
+public void waitForWebElementOfalert(WebDriver driver, int timeout,WebElement element) {
 	wait=new WebDriverWait(driver,Duration.ofSeconds(timeout));
 	wait.until(ExpectedConditions.elementToBeClickable(element));
 	

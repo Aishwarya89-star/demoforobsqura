@@ -46,10 +46,11 @@ public class LoginPage {
 	public boolean checkboxenabled() {
 		return utility.isElementEnabled(rememberme);
 	}
-	public void login(String uname, String pass) {
+	public HomePage login(String uname, String pass) {
 		username.sendKeys(uname);
 		password.sendKeys(pass);
 		button.click();
+		return new HomePage(driver);
 	}
 	
 	public String getErrorMessage() {

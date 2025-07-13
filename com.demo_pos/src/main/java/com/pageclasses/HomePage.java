@@ -35,6 +35,23 @@ public class HomePage {
 	@FindBy(xpath="//section/h1/small[text()='Manage users']")
 	WebElement manageusers;
 	
+	@FindBy(xpath="//button[@id='btnCalculator']")
+	WebElement calculator;
+	
+	@FindBy(xpath="//form//input[@name='result']")
+	WebElement result;
+	
+	@FindBy(xpath="//button[@id='9']")
+	WebElement nine;
+	@FindBy(xpath="//button[@id='1']")
+	WebElement one;
+	
+	@FindBy(xpath="//button[@id='+']")
+	WebElement addition;
+	
+	@FindBy(xpath="//button[@id='equals']")
+	WebElement equals;
+	
 	public String getTextofWelcome() {
 		
 		return utility.getTextofElement(welcome);
@@ -50,4 +67,26 @@ public class HomePage {
 	public String getTextofUsers() {
 		return utility.getTextofElement(manageusers);
 	}
+	
+	public void clickOnCalculator() {
+		utility.mouseHoverandClick_utility(calculator, driver);
+		
+	}
+	
+	public String addNumbersOnCalculator() {
+	
+		nine.click();
+		addition.click();
+		one.click();
+		equals.click();
+		return utility.getAttributeOfElement(result, "value");
+		
+		
+	}
+
+	
+	
+	
+	
+	
 }

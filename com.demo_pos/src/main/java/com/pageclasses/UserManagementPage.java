@@ -56,6 +56,12 @@ WaitUtilities wait=new WaitUtilities();
 	@FindBy(xpath="//table[@id='users_table']/tbody/tr/td[2]")
 	WebElement searchedname;
 	
+	//calci
+	
+	
+	
+
+	
 	public void clickonAddUser() {
 		add.click();
 	}

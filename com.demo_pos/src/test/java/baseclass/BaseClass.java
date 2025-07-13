@@ -39,7 +39,7 @@ public class BaseClass {
 
   @AfterMethod
   public void afterMethod() {
-	  //driver.close();
+	  driver.close();
   }
 
 }

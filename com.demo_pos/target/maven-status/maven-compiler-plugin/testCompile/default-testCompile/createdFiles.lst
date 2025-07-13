@@ -1,0 +1,8 @@
+retry\RetryListner.class
+baseclass\BaseClass.class
+dataprovider\DataProviderClass.class
+testclasses\HomePageTest.class
+testclasses\ContactsTest.class
+retry\RetryAnalyzer.class
+testclasses\UserManagementTest.class
+testclasses\LoginPageTest.class

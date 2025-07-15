@@ -32,7 +32,7 @@ public class BaseClass {
   public void beforeMethod() throws IOException {
 	  readproperty();
 	  driver=new ChromeDriver();
-	  driver.get("https://qalegend.com/billing/public/login");
+	  driver.get(property.getProperty("base_url"));
 	  driver.manage().window().maximize();
 	  driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 	  

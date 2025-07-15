@@ -46,6 +46,7 @@ public class LoginPageTest extends BaseClass {
 	  lp=new LoginPage(driver);
 	 boolean bool= lp.logoDisplayed();
 	 System.out.println(bool+  "  Logo got displayed");
+	 Assert.assertTrue(bool);
 	  
   }
   @Test(priority=1)

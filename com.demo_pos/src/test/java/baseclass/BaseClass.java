@@ -3,8 +3,10 @@ package baseclass;
 import org.testng.annotations.Test;
 
 import constants.ConstantsClass;
+import extentReport.ExtentManager;
 
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeSuite;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -17,7 +19,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterMethod;
 
 public class BaseClass {
-	public WebDriver driver;
+	public static WebDriver driver;
 	public static Properties property;
 	
 	public static void readproperty() throws IOException {
@@ -41,5 +43,10 @@ public class BaseClass {
   public void afterMethod() {
 	  driver.close();
   }
+  
+  @BeforeSuite(alwaysRun = true)
+	public void createReport() {
+		ExtentManager.createInstance();
+	}
 
 }

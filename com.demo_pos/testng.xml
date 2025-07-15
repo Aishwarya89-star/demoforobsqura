@@ -4,12 +4,15 @@
 
 	<listeners>
 		<listener class-name="retry.RetryListner" />
+		<listener class-name="extentReport.TestListener" />
 	</listeners>
+	
+	
 	
   <test thread-count="5" name="Test">
     <classes>
       <class name="testclasses.LoginPageTest"/>
-      <class name="testclasses.ContactsTest"/>
+     <class name="testclasses.ContactsTest"/>
       <class name="testclasses.HomePageTest"/>
       <class name="testclasses.UserManagementTest"/>
     </classes>

@@ -2,6 +2,7 @@ package com.pageclasses;
 
 import java.util.List;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -74,7 +75,8 @@ public class ContactsPage {
 		return utility.getTextofElement(allsuppliers);
 	}
 	public int tablerow() {
-		return utility.getTableRowCount(rowsize, "//table[@id='contact_table']/tbody/tr"); //rowsize
+		wait.presenceOfElement(driver, 2, By.xpath("//table[@id='contact_table']/tbody/tr"));
+		return utility.getTableRowCount(rowsize,"//table[@id='contact_table']/tbody/tr"); //rowsize
 	}
 	
 	public void impcontacts() {

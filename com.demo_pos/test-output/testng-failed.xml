@@ -11,8 +11,8 @@
       <class name="testclasses.ContactsTest">
         <methods>
           <include name="verifytogetRowCount"/>
-          <include name="beforeMethod"/>
           <include name="createReport"/>
+          <include name="beforeMethod"/>
           <include name="afterMethod"/>
         </methods>
       </class> <!-- testclasses.ContactsTest -->

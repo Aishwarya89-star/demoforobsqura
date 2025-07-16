@@ -1,23 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results retried="3" ignored="0" total="13" passed="9" failed="1" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-07-16T15:16:56 IST" name="TestSuite" finished-at="2025-07-16T15:19:45 IST" duration-ms="168785">
+  <suite started-at="2025-07-16T23:14:47 IST" name="TestSuite" finished-at="2025-07-16T23:16:04 IST" duration-ms="76670">
     <groups>
-      <group name="Group1">
-        <method signature="LoginPageTest.verifyUnsuccessfulLogin(java.lang.String,java.lang.String)[pri:4, instance:testclasses.LoginPageTest@2f666ebb]" name="verifyUnsuccessfulLogin" class="testclasses.LoginPageTest"/>
-      </group> <!-- Group1 -->
-      <group name="Group2">
-        <method signature="LoginPageTest.verifyTitleofthePage()[pri:1, instance:testclasses.LoginPageTest@2f666ebb]" name="verifyTitleofthePage" class="testclasses.LoginPageTest"/>
-      </group> <!-- Group2 -->
-      <group name="Groups1">
-        <method signature="LoginPageTest.verifyIstheremembermecheckboxenaled()[pri:2, instance:testclasses.LoginPageTest@2f666ebb]" name="verifyIstheremembermecheckboxenaled" class="testclasses.LoginPageTest"/>
-        <method signature="LoginPageTest.verifySuccessfulLogin()[pri:3, instance:testclasses.LoginPageTest@2f666ebb]" name="verifySuccessfulLogin" class="testclasses.LoginPageTest"/>
-      </group> <!-- Groups1 -->
     </groups>
-    <test started-at="2025-07-16T15:16:56 IST" name="Test" finished-at="2025-07-16T15:19:45 IST" duration-ms="168785">
+    <test started-at="2025-07-16T23:14:47 IST" name="Test" finished-at="2025-07-16T23:16:04 IST" duration-ms="76670">
       <class name="testclasses.ContactsTest">
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testclasses.ContactsTest@93081b6]" started-at="2025-07-16T15:17:58 IST" name="beforeMethod" finished-at="2025-07-16T15:18:04 IST" duration-ms="5192" status="PASS">
+        <test-method is-config="true" signature="createReport()[pri:0, instance:testclasses.ContactsTest@3cfdd820]" started-at="2025-07-16T23:14:47 IST" name="createReport" finished-at="2025-07-16T23:14:47 IST" duration-ms="14" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createReport -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testclasses.ContactsTest@3cfdd820]" started-at="2025-07-16T23:14:48 IST" name="beforeMethod" finished-at="2025-07-16T23:15:17 IST" duration-ms="29658" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -28,15 +22,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="verifyReachedSupplierPage()[pri:0, instance:testclasses.ContactsTest@93081b6]" started-at="2025-07-16T15:18:04 IST" name="verifyReachedSupplierPage" finished-at="2025-07-16T15:18:13 IST" duration-ms="9942" status="PASS">
+        <test-method signature="verifyReachedSupplierPage()[pri:0, instance:testclasses.ContactsTest@3cfdd820]" started-at="2025-07-16T23:15:17 IST" name="verifyReachedSupplierPage" finished-at="2025-07-16T23:15:28 IST" duration-ms="10782" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyReachedSupplierPage -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testclasses.ContactsTest@93081b6]" started-at="2025-07-16T15:18:13 IST" name="afterMethod" finished-at="2025-07-16T15:18:14 IST" duration-ms="426" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testclasses.ContactsTest@3cfdd820]" started-at="2025-07-16T23:15:28 IST" name="afterMethod" finished-at="2025-07-16T23:15:28 IST" duration-ms="376" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testclasses.ContactsTest@93081b6]" started-at="2025-07-16T15:18:14 IST" name="beforeMethod" finished-at="2025-07-16T15:18:20 IST" duration-ms="5989" status="PASS">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testclasses.ContactsTest@3cfdd820]" started-at="2025-07-16T23:15:28 IST" name="beforeMethod" finished-at="2025-07-16T23:15:32 IST" duration-ms="3913" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -47,86 +41,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method retried="true" signature="verifytogetRowCount()[pri:1, instance:testclasses.ContactsTest@93081b6]" started-at="2025-07-16T15:18:20 IST" name="verifytogetRowCount" finished-at="2025-07-16T15:18:32 IST" duration-ms="12241" status="SKIP">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//table[@id='contact_table']/tbody/tr"}
-  (Session info: chrome=138.0.7204.101)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.28.1', revision: '73f5ad48a2'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [9b0635ff5a4fd1c7348eaebdd16768b6, findElement {using=xpath, value=//table[@id='contact_table']/tbody/tr}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.101, chrome: {chromedriverVersion: 138.0.7204.157 (e533e98b126..., userDataDir: C:\Users\LENOVO~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50513}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50513/devtoo..., se:cdpVersion: 138.0.7204.101, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 9b0635ff5a4fd1c7348eaebdd16768b6]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//table[@id='contact_table']/tbody/tr"}
-  (Session info: chrome=138.0.7204.101)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.28.1', revision: '73f5ad48a2'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [9b0635ff5a4fd1c7348eaebdd16768b6, findElement {using=xpath, value=//table[@id='contact_table']/tbody/tr}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.101, chrome: {chromedriverVersion: 138.0.7204.157 (e533e98b126..., userDataDir: C:\Users\LENOVO~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50513}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50513/devtoo..., se:cdpVersion: 138.0.7204.101, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 9b0635ff5a4fd1c7348eaebdd16768b6
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy16.findElements(Unknown Source)
-at utilities.GeneralUtilities.getTableRowCount(GeneralUtilities.java:243)
-at com.pageclasses.ContactsPage.tablerow(ContactsPage.java:77)
-at testclasses.ContactsTest.verifytogetRowCount(ContactsTest.java:42)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+        <test-method signature="verifytogetRowCount()[pri:1, instance:testclasses.ContactsTest@3cfdd820]" started-at="2025-07-16T23:15:32 IST" name="verifytogetRowCount" finished-at="2025-07-16T23:15:45 IST" duration-ms="12749" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifytogetRowCount -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testclasses.ContactsTest@93081b6]" started-at="2025-07-16T15:18:32 IST" name="afterMethod" finished-at="2025-07-16T15:18:33 IST" duration-ms="573" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testclasses.ContactsTest@3cfdd820]" started-at="2025-07-16T23:15:45 IST" name="afterMethod" finished-at="2025-07-16T23:15:45 IST" duration-ms="381" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testclasses.ContactsTest@93081b6]" started-at="2025-07-16T15:18:33 IST" name="beforeMethod" finished-at="2025-07-16T15:18:38 IST" duration-ms="5341" status="PASS">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testclasses.ContactsTest@3cfdd820]" started-at="2025-07-16T23:15:45 IST" name="beforeMethod" finished-at="2025-07-16T23:15:49 IST" duration-ms="4011" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -137,460 +60,15 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method retried="true" signature="verifytogetRowCount()[pri:1, instance:testclasses.ContactsTest@93081b6]" started-at="2025-07-16T15:18:38 IST" name="verifytogetRowCount" finished-at="2025-07-16T15:18:49 IST" duration-ms="10448" status="SKIP">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//table[@id='contact_table']/tbody/tr"}
-  (Session info: chrome=138.0.7204.101)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.28.1', revision: '73f5ad48a2'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [344fbc387cb9200c1ac0bf2dcb6d38ef, findElement {using=xpath, value=//table[@id='contact_table']/tbody/tr}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.101, chrome: {chromedriverVersion: 138.0.7204.157 (e533e98b126..., userDataDir: C:\Users\LENOVO~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50534}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50534/devtoo..., se:cdpVersion: 138.0.7204.101, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 344fbc387cb9200c1ac0bf2dcb6d38ef]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//table[@id='contact_table']/tbody/tr"}
-  (Session info: chrome=138.0.7204.101)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.28.1', revision: '73f5ad48a2'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [344fbc387cb9200c1ac0bf2dcb6d38ef, findElement {using=xpath, value=//table[@id='contact_table']/tbody/tr}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.101, chrome: {chromedriverVersion: 138.0.7204.157 (e533e98b126..., userDataDir: C:\Users\LENOVO~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50534}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50534/devtoo..., se:cdpVersion: 138.0.7204.101, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 344fbc387cb9200c1ac0bf2dcb6d38ef
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy16.findElements(Unknown Source)
-at utilities.GeneralUtilities.getTableRowCount(GeneralUtilities.java:243)
-at com.pageclasses.ContactsPage.tablerow(ContactsPage.java:77)
-at testclasses.ContactsTest.verifytogetRowCount(ContactsTest.java:42)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifytogetRowCount -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testclasses.ContactsTest@93081b6]" started-at="2025-07-16T15:18:49 IST" name="afterMethod" finished-at="2025-07-16T15:18:49 IST" duration-ms="410" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testclasses.ContactsTest@93081b6]" started-at="2025-07-16T15:18:49 IST" name="beforeMethod" finished-at="2025-07-16T15:18:56 IST" duration-ms="7107" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method retried="true" signature="verifytogetRowCount()[pri:1, instance:testclasses.ContactsTest@93081b6]" started-at="2025-07-16T15:18:56 IST" name="verifytogetRowCount" finished-at="2025-07-16T15:19:09 IST" duration-ms="12518" status="SKIP">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//table[@id='contact_table']/tbody/tr"}
-  (Session info: chrome=138.0.7204.101)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.28.1', revision: '73f5ad48a2'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [da5536c90d1996be2e2dab4cb8ec9f2f, findElement {using=xpath, value=//table[@id='contact_table']/tbody/tr}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.101, chrome: {chromedriverVersion: 138.0.7204.157 (e533e98b126..., userDataDir: C:\Users\LENOVO~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50570}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50570/devtoo..., se:cdpVersion: 138.0.7204.101, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: da5536c90d1996be2e2dab4cb8ec9f2f]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//table[@id='contact_table']/tbody/tr"}
-  (Session info: chrome=138.0.7204.101)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.28.1', revision: '73f5ad48a2'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [da5536c90d1996be2e2dab4cb8ec9f2f, findElement {using=xpath, value=//table[@id='contact_table']/tbody/tr}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.101, chrome: {chromedriverVersion: 138.0.7204.157 (e533e98b126..., userDataDir: C:\Users\LENOVO~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50570}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50570/devtoo..., se:cdpVersion: 138.0.7204.101, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: da5536c90d1996be2e2dab4cb8ec9f2f
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy16.findElements(Unknown Source)
-at utilities.GeneralUtilities.getTableRowCount(GeneralUtilities.java:243)
-at com.pageclasses.ContactsPage.tablerow(ContactsPage.java:77)
-at testclasses.ContactsTest.verifytogetRowCount(ContactsTest.java:42)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifytogetRowCount -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testclasses.ContactsTest@93081b6]" started-at="2025-07-16T15:19:09 IST" name="afterMethod" finished-at="2025-07-16T15:19:09 IST" duration-ms="359" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testclasses.ContactsTest@93081b6]" started-at="2025-07-16T15:19:09 IST" name="beforeMethod" finished-at="2025-07-16T15:19:13 IST" duration-ms="4343" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="verifytogetRowCount()[pri:1, instance:testclasses.ContactsTest@93081b6]" started-at="2025-07-16T15:19:13 IST" name="verifytogetRowCount" finished-at="2025-07-16T15:19:24 IST" duration-ms="10295" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//table[@id='contact_table']/tbody/tr"}
-  (Session info: chrome=138.0.7204.101)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.28.1', revision: '73f5ad48a2'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [509b1819f3459e3524a2a7f3106df786, findElement {using=xpath, value=//table[@id='contact_table']/tbody/tr}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.101, chrome: {chromedriverVersion: 138.0.7204.157 (e533e98b126..., userDataDir: C:\Users\LENOVO~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50591}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50591/devtoo..., se:cdpVersion: 138.0.7204.101, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 509b1819f3459e3524a2a7f3106df786]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//table[@id='contact_table']/tbody/tr"}
-  (Session info: chrome=138.0.7204.101)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.28.1', revision: '73f5ad48a2'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [509b1819f3459e3524a2a7f3106df786, findElement {using=xpath, value=//table[@id='contact_table']/tbody/tr}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.101, chrome: {chromedriverVersion: 138.0.7204.157 (e533e98b126..., userDataDir: C:\Users\LENOVO~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50591}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50591/devtoo..., se:cdpVersion: 138.0.7204.101, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 509b1819f3459e3524a2a7f3106df786
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy16.findElements(Unknown Source)
-at utilities.GeneralUtilities.getTableRowCount(GeneralUtilities.java:243)
-at com.pageclasses.ContactsPage.tablerow(ContactsPage.java:77)
-at testclasses.ContactsTest.verifytogetRowCount(ContactsTest.java:42)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifytogetRowCount -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testclasses.ContactsTest@93081b6]" started-at="2025-07-16T15:19:24 IST" name="afterMethod" finished-at="2025-07-16T15:19:24 IST" duration-ms="402" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testclasses.ContactsTest@93081b6]" started-at="2025-07-16T15:19:24 IST" name="beforeMethod" finished-at="2025-07-16T15:19:30 IST" duration-ms="5370" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="verifyFileUploadedfailedmsg()[pri:2, instance:testclasses.ContactsTest@93081b6]" started-at="2025-07-16T15:19:30 IST" name="verifyFileUploadedfailedmsg" finished-at="2025-07-16T15:19:45 IST" duration-ms="15075" status="PASS">
+        <test-method signature="verifyFileUploadedfailedmsg()[pri:2, instance:testclasses.ContactsTest@3cfdd820]" started-at="2025-07-16T23:15:49 IST" name="verifyFileUploadedfailedmsg" finished-at="2025-07-16T23:16:04 IST" duration-ms="14356" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyFileUploadedfailedmsg -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testclasses.ContactsTest@93081b6]" started-at="2025-07-16T15:19:45 IST" name="afterMethod" finished-at="2025-07-16T15:19:45 IST" duration-ms="371" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testclasses.ContactsTest@3cfdd820]" started-at="2025-07-16T23:16:04 IST" name="afterMethod" finished-at="2025-07-16T23:16:04 IST" duration-ms="371" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
       </class> <!-- testclasses.ContactsTest -->
-      <class name="testclasses.LoginPageTest">
-        <test-method is-config="true" signature="createReport()[pri:0, instance:testclasses.LoginPageTest@2f666ebb]" started-at="2025-07-16T15:16:56 IST" name="createReport" finished-at="2025-07-16T15:16:56 IST" duration-ms="19" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createReport -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testclasses.LoginPageTest@2f666ebb]" started-at="2025-07-16T15:16:56 IST" name="beforeMethod" finished-at="2025-07-16T15:17:06 IST" duration-ms="9980" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="verifyLogoDisplayed()[pri:0, instance:testclasses.LoginPageTest@2f666ebb]" started-at="2025-07-16T15:17:06 IST" name="verifyLogoDisplayed" finished-at="2025-07-16T15:17:06 IST" duration-ms="196" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLogoDisplayed -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testclasses.LoginPageTest@2f666ebb]" started-at="2025-07-16T15:17:06 IST" name="afterMethod" finished-at="2025-07-16T15:17:07 IST" duration-ms="763" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testclasses.LoginPageTest@2f666ebb]" started-at="2025-07-16T15:17:07 IST" name="beforeMethod" finished-at="2025-07-16T15:17:13 IST" duration-ms="6033" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="verifyTitleofthePage()[pri:1, instance:testclasses.LoginPageTest@2f666ebb]" started-at="2025-07-16T15:17:13 IST" name="verifyTitleofthePage" finished-at="2025-07-16T15:17:15 IST" duration-ms="1832" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyTitleofthePage -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testclasses.LoginPageTest@2f666ebb]" started-at="2025-07-16T15:17:15 IST" name="afterMethod" finished-at="2025-07-16T15:17:16 IST" duration-ms="784" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testclasses.LoginPageTest@2f666ebb]" started-at="2025-07-16T15:17:16 IST" name="beforeMethod" finished-at="2025-07-16T15:17:21 IST" duration-ms="5254" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="verifyIstheremembermecheckboxenaled()[pri:2, instance:testclasses.LoginPageTest@2f666ebb]" started-at="2025-07-16T15:17:21 IST" name="verifyIstheremembermecheckboxenaled" finished-at="2025-07-16T15:17:21 IST" duration-ms="84" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyIstheremembermecheckboxenaled -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testclasses.LoginPageTest@2f666ebb]" started-at="2025-07-16T15:17:21 IST" name="afterMethod" finished-at="2025-07-16T15:17:22 IST" duration-ms="399" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testclasses.LoginPageTest@2f666ebb]" started-at="2025-07-16T15:17:22 IST" name="beforeMethod" finished-at="2025-07-16T15:17:27 IST" duration-ms="4934" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="verifySuccessfulLogin()[pri:3, instance:testclasses.LoginPageTest@2f666ebb]" started-at="2025-07-16T15:17:27 IST" name="verifySuccessfulLogin" finished-at="2025-07-16T15:17:31 IST" duration-ms="4733" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifySuccessfulLogin -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testclasses.LoginPageTest@2f666ebb]" started-at="2025-07-16T15:17:31 IST" name="afterMethod" finished-at="2025-07-16T15:17:32 IST" duration-ms="445" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testclasses.LoginPageTest@2f666ebb]" started-at="2025-07-16T15:17:32 IST" name="beforeMethod" finished-at="2025-07-16T15:17:38 IST" duration-ms="6117" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="verifyUnsuccessfulLogin(java.lang.String,java.lang.String)[pri:4, instance:testclasses.LoginPageTest@2f666ebb]" started-at="2025-07-16T15:17:38 IST" name="verifyUnsuccessfulLogin" data-provider="unsuccessfulLogin" finished-at="2025-07-16T15:17:40 IST" duration-ms="1757" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[admin]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[123]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyUnsuccessfulLogin -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testclasses.LoginPageTest@2f666ebb]" started-at="2025-07-16T15:17:40 IST" name="afterMethod" finished-at="2025-07-16T15:17:40 IST" duration-ms="466" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testclasses.LoginPageTest@2f666ebb]" started-at="2025-07-16T15:17:40 IST" name="beforeMethod" finished-at="2025-07-16T15:17:48 IST" duration-ms="8092" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="verifyUnsuccessfulLogin(java.lang.String,java.lang.String)[pri:4, instance:testclasses.LoginPageTest@2f666ebb]" started-at="2025-07-16T15:17:49 IST" name="verifyUnsuccessfulLogin" data-provider="unsuccessfulLogin" finished-at="2025-07-16T15:17:50 IST" duration-ms="1831" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[admi]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[123456]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyUnsuccessfulLogin -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testclasses.LoginPageTest@2f666ebb]" started-at="2025-07-16T15:17:50 IST" name="afterMethod" finished-at="2025-07-16T15:17:51 IST" duration-ms="803" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testclasses.LoginPageTest@2f666ebb]" started-at="2025-07-16T15:17:51 IST" name="beforeMethod" finished-at="2025-07-16T15:17:56 IST" duration-ms="5226" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="verifyUnsuccessfulLogin(java.lang.String,java.lang.String)[pri:4, instance:testclasses.LoginPageTest@2f666ebb]" started-at="2025-07-16T15:17:56 IST" name="verifyUnsuccessfulLogin" data-provider="unsuccessfulLogin" finished-at="2025-07-16T15:17:58 IST" duration-ms="1554" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[admin]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[admin]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyUnsuccessfulLogin -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testclasses.LoginPageTest@2f666ebb]" started-at="2025-07-16T15:17:58 IST" name="afterMethod" finished-at="2025-07-16T15:17:58 IST" duration-ms="417" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-      </class> <!-- testclasses.LoginPageTest -->
     </test> <!-- Test -->
   </suite> <!-- TestSuite -->
 </testng-results>

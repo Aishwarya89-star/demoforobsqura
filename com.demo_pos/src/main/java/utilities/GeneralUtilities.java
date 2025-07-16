@@ -238,7 +238,7 @@ public class GeneralUtilities {
 
 		}
 		//table
-		public static int getTableRowCount(WebElement tableElement,String locator) {
+		public  int getTableRowCount(WebElement tableElement,String locator) {
 		  //  List<WebElement> rows = tableElement.findElements(By.xpath("//table[@id='contact_table']/tbody/tr"));
 		    List<WebElement> rows = tableElement.findElements(By.xpath(locator));
 		    int rowCount = rows.size();

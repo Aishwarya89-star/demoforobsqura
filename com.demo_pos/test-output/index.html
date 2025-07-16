@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-TestSuite" class="navigator-link">
-              <span class="suite-name border-passed">TestSuite</span>
+              <span class="suite-name border-failed">TestSuite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -60,7 +60,7 @@
                 </li>
                 <li>
                   <a href="#" panel-name="group-TestSuite" class="navigator-link ">
-                    <span>0 groups</span>
+                    <span>3 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,45 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">14 methods,   14 passed</span>
+                    <span class="method-stats">13 methods, 1 failed,  3 skipped,  9 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-TestSuite" class="hide-methods failed suite-TestSuite"> (hide)</a> <!-- hide-methods failed suite-TestSuite -->
+                      <a href="#" panel-name="suite-TestSuite" class="show-methods failed suite-TestSuite"> (show)</a> <!-- show-methods failed suite-TestSuite -->
+                    </span>
+                    <div class="method-list-content failed suite-TestSuite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestSuite" title="testclasses.ContactsTest" class="method navigator-link" hash-for-method="verifytogetRowCount">verifytogetRowCount</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-TestSuite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Retried methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-TestSuite" class="hide-methods skipped suite-TestSuite"> (hide)</a> <!-- hide-methods skipped suite-TestSuite -->
+                      <a href="#" panel-name="suite-TestSuite" class="show-methods skipped suite-TestSuite"> (show)</a> <!-- show-methods skipped suite-TestSuite -->
+                    </span>
+                    <div class="method-list-content skipped suite-TestSuite">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestSuite" title="testclasses.ContactsTest" class="method navigator-link" hash-for-method="verifytogetRowCount">verifytogetRowCount</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestSuite" title="testclasses.ContactsTest" class="method navigator-link" hash-for-method="verifytogetRowCount">verifytogetRowCount</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestSuite" title="testclasses.ContactsTest" class="method navigator-link" hash-for-method="verifytogetRowCount">verifytogetRowCount</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-TestSuite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,17 +141,7 @@
                     <div class="method-list-content passed suite-TestSuite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-TestSuite" title="testclasses.HomePageTest" class="method navigator-link" hash-for-method="calculatorname">calculatorname</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-TestSuite" title="testclasses.ContactsTest" class="method navigator-link" hash-for-method="verifyFileUploadedfailedmsg">verifyFileUploadedfailedmsg</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-TestSuite" title="testclasses.UserManagementTest" class="method navigator-link" hash-for-method="verifyForAdduserstext">verifyForAdduserstext</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -133,11 +161,6 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-TestSuite" title="testclasses.HomePageTest" class="method navigator-link" hash-for-method="verifyReachedUserManagementPage">verifyReachedUserManagementPage</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-TestSuite" title="testclasses.LoginPageTest" class="method navigator-link" hash-for-method="verifySuccessfulLogin">verifySuccessfulLogin</a> <!-- method navigator-link -->
                       </span>
                       <br/>
@@ -148,7 +171,7 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-TestSuite" title="testclasses.LoginPageTest" class="method navigator-link" hash-for-method="verifyUnsuccessfulLogin(admi, 123456)">verifyUnsuccessfulLogin(admi, 123456)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-TestSuite" title="testclasses.LoginPageTest" class="method navigator-link" hash-for-method="verifyUnsuccessfulLogin(admin, admin)">verifyUnsuccessfulLogin(admin, admin)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -158,17 +181,7 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-TestSuite" title="testclasses.LoginPageTest" class="method navigator-link" hash-for-method="verifyUnsuccessfulLogin(admin, admin)">verifyUnsuccessfulLogin(admin, admin)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-TestSuite" title="testclasses.UserManagementTest" class="method navigator-link" hash-for-method="verifynewuserCreated">verifynewuserCreated</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-TestSuite" title="testclasses.ContactsTest" class="method navigator-link" hash-for-method="verifytogetRowCount">verifytogetRowCount</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-TestSuite" title="testclasses.LoginPageTest" class="method navigator-link" hash-for-method="verifyUnsuccessfulLogin(admi, 123456)">verifyUnsuccessfulLogin(admi, 123456)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-TestSuite -->
@@ -183,28 +196,166 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-TestSuite" class="panel TestSuite">
-          <div class="suite-TestSuite-class-passed">
+          <div class="suite-TestSuite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">testclasses.UserManagementTest</span>
+              <img src="failed.png"/>
+              <span class="class-name">testclasses.ContactsTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyForAdduserstext">
-                  </a> <!-- verifyForAdduserstext -->
-                  <span class="method-name">verifyForAdduserstext</span>
+                  <a name="verifytogetRowCount">
+                  </a> <!-- verifytogetRowCount -->
+                  <span class="method-name">verifytogetRowCount</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//table[@id=&apos;contact_table&apos;]/tbody/tr&quot;}
+  (Session info: chrome=138.0.7204.101)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.28.1&apos;, revision: &apos;73f5ad48a2&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [509b1819f3459e3524a2a7f3106df786, findElement {using=xpath, value=//table[@id=&apos;contact_table&apos;]/tbody/tr}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.101, chrome: {chromedriverVersion: 138.0.7204.157 (e533e98b126..., userDataDir: C:\Users\LENOVO~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50591}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50591/devtoo..., se:cdpVersion: 138.0.7204.101, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 509b1819f3459e3524a2a7f3106df786
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy16.findElements(Unknown Source)
+	at utilities.GeneralUtilities.getTableRowCount(GeneralUtilities.java:243)
+	at com.pageclasses.ContactsPage.tablerow(ContactsPage.java:77)
+	at testclasses.ContactsTest.verifytogetRowCount(ContactsTest.java:42)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestSuite-class-failed -->
+          <div class="suite-TestSuite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">testclasses.ContactsTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifytogetRowCount">
+                  </a> <!-- verifytogetRowCount -->
+                  <span class="method-name">verifytogetRowCount</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//table[@id=&apos;contact_table&apos;]/tbody/tr&quot;}
+  (Session info: chrome=138.0.7204.101)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.28.1&apos;, revision: &apos;73f5ad48a2&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [344fbc387cb9200c1ac0bf2dcb6d38ef, findElement {using=xpath, value=//table[@id=&apos;contact_table&apos;]/tbody/tr}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.101, chrome: {chromedriverVersion: 138.0.7204.157 (e533e98b126..., userDataDir: C:\Users\LENOVO~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50534}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50534/devtoo..., se:cdpVersion: 138.0.7204.101, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 344fbc387cb9200c1ac0bf2dcb6d38ef
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy16.findElements(Unknown Source)
+	at utilities.GeneralUtilities.getTableRowCount(GeneralUtilities.java:243)
+	at com.pageclasses.ContactsPage.tablerow(ContactsPage.java:77)
+	at testclasses.ContactsTest.verifytogetRowCount(ContactsTest.java:42)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="verifynewuserCreated">
-                  </a> <!-- verifynewuserCreated -->
-                  <span class="method-name">verifynewuserCreated</span>
+                  <a name="verifytogetRowCount">
+                  </a> <!-- verifytogetRowCount -->
+                  <span class="method-name">verifytogetRowCount</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//table[@id=&apos;contact_table&apos;]/tbody/tr&quot;}
+  (Session info: chrome=138.0.7204.101)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.28.1&apos;, revision: &apos;73f5ad48a2&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9b0635ff5a4fd1c7348eaebdd16768b6, findElement {using=xpath, value=//table[@id=&apos;contact_table&apos;]/tbody/tr}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.101, chrome: {chromedriverVersion: 138.0.7204.157 (e533e98b126..., userDataDir: C:\Users\LENOVO~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50513}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50513/devtoo..., se:cdpVersion: 138.0.7204.101, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9b0635ff5a4fd1c7348eaebdd16768b6
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy16.findElements(Unknown Source)
+	at utilities.GeneralUtilities.getTableRowCount(GeneralUtilities.java:243)
+	at com.pageclasses.ContactsPage.tablerow(ContactsPage.java:77)
+	at testclasses.ContactsTest.verifytogetRowCount(ContactsTest.java:42)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifytogetRowCount">
+                  </a> <!-- verifytogetRowCount -->
+                  <span class="method-name">verifytogetRowCount</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//table[@id=&apos;contact_table&apos;]/tbody/tr&quot;}
+  (Session info: chrome=138.0.7204.101)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.28.1&apos;, revision: &apos;73f5ad48a2&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [da5536c90d1996be2e2dab4cb8ec9f2f, findElement {using=xpath, value=//table[@id=&apos;contact_table&apos;]/tbody/tr}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.101, chrome: {chromedriverVersion: 138.0.7204.157 (e533e98b126..., userDataDir: C:\Users\LENOVO~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50570}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50570/devtoo..., se:cdpVersion: 138.0.7204.101, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: da5536c90d1996be2e2dab4cb8ec9f2f
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy16.findElements(Unknown Source)
+	at utilities.GeneralUtilities.getTableRowCount(GeneralUtilities.java:243)
+	at com.pageclasses.ContactsPage.tablerow(ContactsPage.java:77)
+	at testclasses.ContactsTest.verifytogetRowCount(ContactsTest.java:42)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-TestSuite-class-passed -->
+          </div> <!-- suite-TestSuite-class-skipped -->
           <div class="suite-TestSuite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -241,10 +392,10 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyUnsuccessfulLogin(admi, 123456)">
-                  </a> <!-- verifyUnsuccessfulLogin(admi, 123456) -->
+                  <a name="verifyUnsuccessfulLogin(admin, admin)">
+                  </a> <!-- verifyUnsuccessfulLogin(admin, admin) -->
                   <span class="method-name">verifyUnsuccessfulLogin</span>
-                  <span class="parameters">(admi,123456)</span>
+                  <span class="parameters">(admin,admin)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -257,32 +408,10 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyUnsuccessfulLogin(admin, admin)">
-                  </a> <!-- verifyUnsuccessfulLogin(admin, admin) -->
+                  <a name="verifyUnsuccessfulLogin(admi, 123456)">
+                  </a> <!-- verifyUnsuccessfulLogin(admi, 123456) -->
                   <span class="method-name">verifyUnsuccessfulLogin</span>
-                  <span class="parameters">(admin,admin)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-TestSuite-class-passed -->
-          <div class="suite-TestSuite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">testclasses.HomePageTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="calculatorname">
-                  </a> <!-- calculatorname -->
-                  <span class="method-name">calculatorname</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyReachedUserManagementPage">
-                  </a> <!-- verifyReachedUserManagementPage -->
-                  <span class="method-name">verifyReachedUserManagementPage</span>
+                  <span class="parameters">(admi,123456)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -307,13 +436,6 @@
                   <span class="method-name">verifyReachedSupplierPage</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifytogetRowCount">
-                  </a> <!-- verifytogetRowCount -->
-                  <span class="method-name">verifytogetRowCount</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-TestSuite-class-passed -->
         </div> <!-- panel TestSuite -->
@@ -331,11 +453,10 @@
     &lt;listener class-name=&quot;extentReport.TestListener&quot;/&gt;
   &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;testclasses.LoginPageTest&quot;/&gt;
       &lt;class name=&quot;testclasses.ContactsTest&quot;/&gt;
-      &lt;class name=&quot;testclasses.HomePageTest&quot;/&gt;
-      &lt;class name=&quot;testclasses.UserManagementTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- TestSuite --&gt;
@@ -349,7 +470,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (4 classes)</span>
+                <span class="test-name">Test (2 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -359,6 +480,34 @@
             <span class="header-content">Groups for TestSuite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">Group1</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyUnsuccessfulLogin</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">Group2</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyTitleofthePage</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">Groups1</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyIstheremembermecheckboxenaled</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifySuccessfulLogin</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="times-TestSuite" class="panel">
@@ -375,63 +524,59 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(14);
+data.addRows(13);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verifynewuserCreated')
-data.setCell(0, 2, 'testclasses.UserManagementTest')
-data.setCell(0, 3, 16615);
+data.setCell(0, 1, 'verifyFileUploadedfailedmsg')
+data.setCell(0, 2, 'testclasses.ContactsTest')
+data.setCell(0, 3, 15075);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'verifyFileUploadedfailedmsg')
+data.setCell(1, 1, 'verifytogetRowCount')
 data.setCell(1, 2, 'testclasses.ContactsTest')
-data.setCell(1, 3, 15327);
+data.setCell(1, 3, 12518);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'verifytogetRowCount')
 data.setCell(2, 2, 'testclasses.ContactsTest')
-data.setCell(2, 3, 12579);
+data.setCell(2, 3, 12241);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'verifyReachedSupplierPage')
+data.setCell(3, 1, 'verifytogetRowCount')
 data.setCell(3, 2, 'testclasses.ContactsTest')
-data.setCell(3, 3, 9263);
+data.setCell(3, 3, 10448);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'verifyForAdduserstext')
-data.setCell(4, 2, 'testclasses.UserManagementTest')
-data.setCell(4, 3, 9161);
+data.setCell(4, 1, 'verifytogetRowCount')
+data.setCell(4, 2, 'testclasses.ContactsTest')
+data.setCell(4, 3, 10295);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'calculatorname')
-data.setCell(5, 2, 'testclasses.HomePageTest')
-data.setCell(5, 3, 8519);
+data.setCell(5, 1, 'verifyReachedSupplierPage')
+data.setCell(5, 2, 'testclasses.ContactsTest')
+data.setCell(5, 3, 9942);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'verifyReachedUserManagementPage')
-data.setCell(6, 2, 'testclasses.HomePageTest')
-data.setCell(6, 3, 7231);
+data.setCell(6, 1, 'verifySuccessfulLogin')
+data.setCell(6, 2, 'testclasses.LoginPageTest')
+data.setCell(6, 3, 4733);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'verifySuccessfulLogin')
+data.setCell(7, 1, 'verifyTitleofthePage')
 data.setCell(7, 2, 'testclasses.LoginPageTest')
-data.setCell(7, 3, 4210);
+data.setCell(7, 3, 1832);
 data.setCell(8, 0, 8)
 data.setCell(8, 1, 'verifyUnsuccessfulLogin')
 data.setCell(8, 2, 'testclasses.LoginPageTest')
-data.setCell(8, 3, 1526);
+data.setCell(8, 3, 1831);
 data.setCell(9, 0, 9)
 data.setCell(9, 1, 'verifyUnsuccessfulLogin')
 data.setCell(9, 2, 'testclasses.LoginPageTest')
-data.setCell(9, 3, 1447);
+data.setCell(9, 3, 1757);
 data.setCell(10, 0, 10)
 data.setCell(10, 1, 'verifyUnsuccessfulLogin')
 data.setCell(10, 2, 'testclasses.LoginPageTest')
-data.setCell(10, 3, 1247);
+data.setCell(10, 3, 1554);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'verifyTitleofthePage')
+data.setCell(11, 1, 'verifyLogoDisplayed')
 data.setCell(11, 2, 'testclasses.LoginPageTest')
-data.setCell(11, 3, 1049);
+data.setCell(11, 3, 196);
 data.setCell(12, 0, 12)
-data.setCell(12, 1, 'verifyLogoDisplayed')
+data.setCell(12, 1, 'verifyIstheremembermecheckboxenaled')
 data.setCell(12, 2, 'testclasses.LoginPageTest')
-data.setCell(12, 3, 115);
-data.setCell(13, 0, 13)
-data.setCell(13, 1, 'verifyIstheremembermecheckboxenaled')
-data.setCell(13, 2, 'testclasses.LoginPageTest')
-data.setCell(13, 3, 52);
+data.setCell(12, 3, 84);
 window.suiteTableData['TestSuite']= { tableData: data, tableDiv: 'times-div-TestSuite'}
 return data;
 }
@@ -451,25 +596,11 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-TestSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">3 ignored methods</span>
+            <span class="header-content">1 ignored method</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
-              <span class="ignored-class-name">testclasses.UserManagementTest</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">createReport</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
               <span class="ignored-class-name">testclasses.ContactsTest</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">createReport</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">testclasses.HomePageTest</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">createReport</span>
                 <br/>
@@ -489,181 +620,165 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="configuration-method before">
-                <span class="method-name">beforeMethod</span>
-                <span class="method-start">85 ms</span>
+                <span class="method-name">beforeMethod(chrome)</span>
+                <span class="method-start">94 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyLogoDisplayed</span>
-                <span class="method-start">6231 ms</span>
+                <span class="method-start">10075 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">6356 ms</span>
+                <span class="method-start">10286 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <span class="method-name">beforeMethod</span>
-                <span class="method-start">6653 ms</span>
+                <span class="method-name">beforeMethod(chrome)</span>
+                <span class="method-start">11059 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyTitleofthePage</span>
-                <span class="method-start">11627 ms</span>
+                <span class="method-start">17093 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">12680 ms</span>
+                <span class="method-start">18929 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <span class="method-name">beforeMethod</span>
-                <span class="method-start">13030 ms</span>
+                <span class="method-name">beforeMethod(chrome)</span>
+                <span class="method-start">19719 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyIstheremembermecheckboxenaled</span>
-                <span class="method-start">17075 ms</span>
+                <span class="method-start">24974 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">17131 ms</span>
+                <span class="method-start">25061 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <span class="method-name">beforeMethod</span>
-                <span class="method-start">17378 ms</span>
+                <span class="method-name">beforeMethod(chrome)</span>
+                <span class="method-start">25461 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifySuccessfulLogin</span>
-                <span class="method-start">22021 ms</span>
+                <span class="method-start">30395 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">26238 ms</span>
+                <span class="method-start">35137 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <span class="method-name">beforeMethod</span>
-                <span class="method-start">26943 ms</span>
+                <span class="method-name">beforeMethod(chrome)</span>
+                <span class="method-start">35905 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyUnsuccessfulLogin(admin, 123)</span>
-                <span class="method-start">32277 ms</span>
+                <span class="method-start">42022 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">33728 ms</span>
+                <span class="method-start">43785 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <span class="method-name">beforeMethod</span>
-                <span class="method-start">34078 ms</span>
+                <span class="method-name">beforeMethod(chrome)</span>
+                <span class="method-start">44252 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyUnsuccessfulLogin(admi, 123456)</span>
-                <span class="method-start">38129 ms</span>
+                <span class="method-start">52345 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">39378 ms</span>
+                <span class="method-start">54178 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <span class="method-name">beforeMethod</span>
-                <span class="method-start">39660 ms</span>
+                <span class="method-name">beforeMethod(chrome)</span>
+                <span class="method-start">54982 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyUnsuccessfulLogin(admin, admin)</span>
-                <span class="method-start">44900 ms</span>
+                <span class="method-start">60209 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">46429 ms</span>
+                <span class="method-start">61768 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testclasses.ContactsTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <span class="method-name">beforeMethod</span>
-                <span class="method-start">46696 ms</span>
+                <span class="method-name">beforeMethod(chrome)</span>
+                <span class="method-start">62187 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyReachedSupplierPage</span>
-                <span class="method-start">52782 ms</span>
+                <span class="method-start">67380 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">62046 ms</span>
+                <span class="method-start">77325 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <span class="method-name">beforeMethod</span>
-                <span class="method-start">62342 ms</span>
+                <span class="method-name">beforeMethod(chrome)</span>
+                <span class="method-start">77753 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifytogetRowCount</span>
-                <span class="method-start">66398 ms</span>
+                <span class="method-start">83742 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">78979 ms</span>
+                <span class="method-start">95995 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <span class="method-name">beforeMethod</span>
-                <span class="method-start">79360 ms</span>
+                <span class="method-name">beforeMethod(chrome)</span>
+                <span class="method-start">96570 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifytogetRowCount</span>
+                <span class="method-start">101911 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">112366 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(chrome)</span>
+                <span class="method-start">112777 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifytogetRowCount</span>
+                <span class="method-start">119886 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">132415 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(chrome)</span>
+                <span class="method-start">132778 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifytogetRowCount</span>
+                <span class="method-start">137122 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">147580 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(chrome)</span>
+                <span class="method-start">147985 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyFileUploadedfailedmsg</span>
-                <span class="method-start">83240 ms</span>
+                <span class="method-start">153355 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">98571 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">testclasses.HomePageTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">beforeMethod</span>
-                <span class="method-start">98934 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">verifyReachedUserManagementPage</span>
-                <span class="method-start">103673 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">afterMethod</span>
-                <span class="method-start">110905 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">beforeMethod</span>
-                <span class="method-start">111211 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">calculatorname</span>
-                <span class="method-start">116109 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">afterMethod</span>
-                <span class="method-start">124630 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">testclasses.UserManagementTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">beforeMethod</span>
-                <span class="method-start">124903 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">verifyForAdduserstext</span>
-                <span class="method-start">133754 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">afterMethod</span>
-                <span class="method-start">142916 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">beforeMethod</span>
-                <span class="method-start">143180 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">verifynewuserCreated</span>
-                <span class="method-start">148939 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">afterMethod</span>
-                <span class="method-start">165556 ms</span>
+                <span class="method-start">168433 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

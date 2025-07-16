@@ -6,15 +6,16 @@
     <listener class-name="extentReport.TestListener"/>
   </listeners>
   <test thread-count="5" name="Test(failed)">
+    <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="testclasses.LoginPageTest">
+      <class name="testclasses.ContactsTest">
         <methods>
-          <include name="verifySuccessfulLogin"/>
+          <include name="verifytogetRowCount"/>
           <include name="beforeMethod"/>
           <include name="createReport"/>
           <include name="afterMethod"/>
         </methods>
-      </class> <!-- testclasses.LoginPageTest -->
+      </class> <!-- testclasses.ContactsTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [TestSuite] -->

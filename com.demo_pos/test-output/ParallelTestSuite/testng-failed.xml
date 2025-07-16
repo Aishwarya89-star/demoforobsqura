@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="3" parallel="tests" name="Failed suite [ParallelTestSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="3" parallel="tests" name="Test1(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="testclasses.LoginPageTest">
+        <methods>
+          <include name="verifyTitleofthePage"/>
+          <include name="verifyIstheremembermecheckboxenaled"/>
+          <include name="beforeMethod"/>
+          <include name="createReport"/>
+          <include name="verifySuccessfulLogin"/>
+          <include name="verifyUnsuccessfulLogin"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- testclasses.LoginPageTest -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+  <test thread-count="3" parallel="tests" name="Test2(failed)">
+    <parameter name="browser" value="Edge"/>
+    <classes>
+      <class name="testclasses.LoginPageTest">
+        <methods>
+          <include name="verifyTitleofthePage"/>
+          <include name="verifyIstheremembermecheckboxenaled"/>
+          <include name="beforeMethod"/>
+          <include name="createReport"/>
+          <include name="verifySuccessfulLogin"/>
+          <include name="verifyUnsuccessfulLogin"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- testclasses.LoginPageTest -->
+    </classes>
+  </test> <!-- Test2(failed) -->
+</suite> <!-- Failed suite [ParallelTestSuite] -->

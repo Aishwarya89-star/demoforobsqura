@@ -23,7 +23,7 @@ public class LoginPageTest extends BaseClass {
 	HomePage hp;
 	UserManagementPage up;
 	
-  @Test(priority=3)
+  @Test(priority=3,groups = {"Groups1"})
   public void verifySuccessfulLogin() throws IOException {
 	  lp=new LoginPage(driver);
 	hp= lp.login(ExcelUtilities.getStringData(0, 0, "LoginPage"),ExcelUtilities.getIntegerData(0, 1, "LoginPage"));
@@ -32,7 +32,7 @@ public class LoginPageTest extends BaseClass {
 	  System.out.println(actual);
 	  Assert.assertTrue(actual.contains("Welcome admin,"));
   }
-  @Test(dataProvider="unsuccessfulLogin",dataProviderClass=DataProviderClass.class,priority=4)
+  @Test(dataProvider="unsuccessfulLogin",dataProviderClass=DataProviderClass.class,priority=4,groups= {"Group1"})
   public void verifyUnsuccessfulLogin(String n,String s ){
 	  lp=new LoginPage(driver);
 	  lp.login(n,s);
@@ -49,7 +49,7 @@ public class LoginPageTest extends BaseClass {
 	 Assert.assertTrue(bool);
 	  
   }
-  @Test(priority=1)
+  @Test(priority=1,groups = {"Group2"})
     
   public void verifyTitleofthePage() throws IOException {
 	  lp=new LoginPage(driver);
@@ -57,7 +57,7 @@ public class LoginPageTest extends BaseClass {
 	  System.out.println(actual);
 	  Assert.assertTrue(actual.contains(ExcelUtilities.getStringData(0, 0, "Title")));
   }
-  @Test(priority=2)
+  @Test(priority=2,groups = {"Groups1"})
   public void verifyIstheremembermecheckboxenaled() {
 	  lp=new LoginPage(driver);
 	  boolean bool=lp.checkboxenabled();

@@ -74,7 +74,7 @@ public class ContactsPage {
 		return utility.getTextofElement(allsuppliers);
 	}
 	public int tablerow() {
-		return utility.getTableRowCount(rowsize); //rowsize
+		return utility.getTableRowCount(rowsize, "//table[@id='contact_table']/tbody/tr"); //rowsize
 	}
 	
 	public void impcontacts() {

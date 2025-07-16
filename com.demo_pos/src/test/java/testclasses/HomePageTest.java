@@ -28,7 +28,7 @@ public class HomePageTest extends BaseClass {
 	 System.out.println(actual);
 	 Assert.assertTrue(actual.contains("Manage users"));
   }
-  @Test(priority=1)
+  @Test(priority=1,groups = {"Groups1"})
   public void calculatorname() throws IOException {
 	  lp=new LoginPage(driver);
 	  hp=new HomePage(driver);

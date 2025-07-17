@@ -56,7 +56,7 @@ WaitUtilities wait=new WaitUtilities();
 	@FindBy(xpath="//table[@id='users_table']/tbody/tr/td[2]")
 	WebElement searchedname;
 	
-	//calci
+	
 	
 	
 	
@@ -88,6 +88,7 @@ WaitUtilities wait=new WaitUtilities();
 	}
 	
 	public String textGotPopulated() {
+		wait.waitForElementToBeClickableByWebElement_Utility(driver, 2, searchedname);
 		return utility.getTextofElement(searchedname);
 	}
 

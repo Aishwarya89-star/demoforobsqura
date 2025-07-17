@@ -8,14 +8,14 @@
   <test thread-count="5" name="Test(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="testclasses.ContactsTest">
+      <class name="testclasses.UserManagementTest">
         <methods>
-          <include name="verifytogetRowCount"/>
-          <include name="createReport"/>
+          <include name="verifynewuserCreated"/>
           <include name="beforeMethod"/>
+          <include name="createReport"/>
           <include name="afterMethod"/>
         </methods>
-      </class> <!-- testclasses.ContactsTest -->
+      </class> <!-- testclasses.UserManagementTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [TestSuite] -->

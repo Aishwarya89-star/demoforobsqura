@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-TestSuite" class="navigator-link">
-              <span class="suite-name border-passed">TestSuite</span>
+              <span class="suite-name border-skipped">TestSuite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,7 +92,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods,   3 passed</span>
+                    <span class="method-stats">3 methods,  1 skipped,  2 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Retried methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-TestSuite" class="hide-methods skipped suite-TestSuite"> (hide)</a> <!-- hide-methods skipped suite-TestSuite -->
+                      <a href="#" panel-name="suite-TestSuite" class="show-methods skipped suite-TestSuite"> (show)</a> <!-- show-methods skipped suite-TestSuite -->
+                    </span>
+                    <div class="method-list-content skipped suite-TestSuite">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestSuite" title="testclasses.UserManagementTest" class="method navigator-link" hash-for-method="verifynewuserCreated">verifynewuserCreated</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-TestSuite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,17 +117,12 @@
                     <div class="method-list-content passed suite-TestSuite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-TestSuite" title="testclasses.ContactsTest" class="method navigator-link" hash-for-method="verifyFileUploadedfailedmsg">verifyFileUploadedfailedmsg</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-TestSuite" title="testclasses.UserManagementTest" class="method navigator-link" hash-for-method="verifyForAdduserstext">verifyForAdduserstext</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-TestSuite" title="testclasses.ContactsTest" class="method navigator-link" hash-for-method="verifyReachedSupplierPage">verifyReachedSupplierPage</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-TestSuite" title="testclasses.ContactsTest" class="method navigator-link" hash-for-method="verifytogetRowCount">verifytogetRowCount</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-TestSuite" title="testclasses.UserManagementTest" class="method navigator-link" hash-for-method="verifynewuserCreated">verifynewuserCreated</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-TestSuite -->
@@ -128,31 +137,44 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-TestSuite" class="panel TestSuite">
-          <div class="suite-TestSuite-class-passed">
+          <div class="suite-TestSuite-class-skipped">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">testclasses.ContactsTest</span>
+              <img src="skipped.png"/>
+              <span class="class-name">testclasses.UserManagementTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyFileUploadedfailedmsg">
-                  </a> <!-- verifyFileUploadedfailedmsg -->
-                  <span class="method-name">verifyFileUploadedfailedmsg</span>
+                  <a name="verifynewuserCreated">
+                  </a> <!-- verifynewuserCreated -->
+                  <span class="method-name">verifynewuserCreated</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at testclasses.UserManagementTest.verifynewuserCreated(UserManagementTest.java:54)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestSuite-class-skipped -->
+          <div class="suite-TestSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testclasses.UserManagementTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyForAdduserstext">
+                  </a> <!-- verifyForAdduserstext -->
+                  <span class="method-name">verifyForAdduserstext</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyReachedSupplierPage">
-                  </a> <!-- verifyReachedSupplierPage -->
-                  <span class="method-name">verifyReachedSupplierPage</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifytogetRowCount">
-                  </a> <!-- verifytogetRowCount -->
-                  <span class="method-name">verifytogetRowCount</span>
+                  <a name="verifynewuserCreated">
+                  </a> <!-- verifynewuserCreated -->
+                  <span class="method-name">verifynewuserCreated</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -174,7 +196,7 @@
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;testclasses.ContactsTest&quot;/&gt;
+      &lt;class name=&quot;testclasses.UserManagementTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- TestSuite --&gt;
@@ -216,22 +238,22 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verifyFileUploadedfailedmsg')
-data.setCell(0, 2, 'testclasses.ContactsTest')
-data.setCell(0, 3, 14356);
+data.setCell(0, 1, 'verifynewuserCreated')
+data.setCell(0, 2, 'testclasses.UserManagementTest')
+data.setCell(0, 3, 16127);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'verifytogetRowCount')
-data.setCell(1, 2, 'testclasses.ContactsTest')
-data.setCell(1, 3, 12749);
+data.setCell(1, 1, 'verifynewuserCreated')
+data.setCell(1, 2, 'testclasses.UserManagementTest')
+data.setCell(1, 3, 14146);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'verifyReachedSupplierPage')
-data.setCell(2, 2, 'testclasses.ContactsTest')
-data.setCell(2, 3, 10782);
+data.setCell(2, 1, 'verifyForAdduserstext')
+data.setCell(2, 2, 'testclasses.UserManagementTest')
+data.setCell(2, 3, 10306);
 window.suiteTableData['TestSuite']= { tableData: data, tableDiv: 'times-div-TestSuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 37 seconds</span>
+              <span class="suite-total-time">Total running time: 40 seconds</span>
               <div id="times-div-TestSuite">
               </div> <!-- times-div-TestSuite -->
             </div> <!-- times-div -->
@@ -257,46 +279,46 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">testclasses.ContactsTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">testclasses.UserManagementTest</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">createReport</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod(chrome)</span>
-                <span class="method-start">59 ms</span>
+                <span class="method-start">65 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">verifyReachedSupplierPage</span>
-                <span class="method-start">29718 ms</span>
+                <span class="method-name">verifyForAdduserstext</span>
+                <span class="method-start">4820 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">40510 ms</span>
+                <span class="method-start">15136 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod(chrome)</span>
-                <span class="method-start">40894 ms</span>
+                <span class="method-start">15509 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">verifytogetRowCount</span>
-                <span class="method-start">44807 ms</span>
+                <span class="method-name">verifynewuserCreated</span>
+                <span class="method-start">19590 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">57560 ms</span>
+                <span class="method-start">35726 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod(chrome)</span>
-                <span class="method-start">57944 ms</span>
+                <span class="method-start">36080 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">verifyFileUploadedfailedmsg</span>
-                <span class="method-start">61955 ms</span>
+                <span class="method-name">verifynewuserCreated</span>
+                <span class="method-start">40839 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">76313 ms</span>
+                <span class="method-start">54990 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

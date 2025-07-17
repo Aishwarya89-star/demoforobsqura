@@ -22,9 +22,9 @@ public class ContactsTest extends BaseClass {
   @Test(priority=0)
   public void verifyReachedSupplierPage() throws IOException {
 	  lp=new LoginPage(driver);
-	  hp=new HomePage(driver);
+	//  hp=new HomePage(driver);
 	  cp=new ContactsPage(driver);
-	  lp.login(ExcelUtilities.getStringData(0, 0, "LoginPage"),ExcelUtilities.getIntegerData(0, 1, "LoginPage"));
+	 hp= lp.login(ExcelUtilities.getStringData(0, 0, "LoginPage"),ExcelUtilities.getIntegerData(0, 1, "LoginPage"));
 	  hp.clickonusermanagement();
 	  cp.goToSupplierpage();
 	  String actual=cp.getTextofSupplierPage();
@@ -34,9 +34,9 @@ public class ContactsTest extends BaseClass {
   @Test(priority=1)
   public void verifytogetRowCount() throws IOException {
 	  lp=new LoginPage(driver);
-	  hp=new HomePage(driver);
+	//  hp=new HomePage(driver);
 	  cp=new ContactsPage(driver);
-	  lp.login(ExcelUtilities.getStringData(0, 0, "LoginPage"),ExcelUtilities.getIntegerData(0, 1, "LoginPage"));
+	hp=  lp.login(ExcelUtilities.getStringData(0, 0, "LoginPage"),ExcelUtilities.getIntegerData(0, 1, "LoginPage"));
 	  hp.clickonusermanagement();
 	  cp.goToSupplierpage();
 	int count=cp.tablerow();
@@ -46,9 +46,9 @@ public class ContactsTest extends BaseClass {
   @Test(priority=2)
   public void verifyFileUploadedfailedmsg() throws IOException {
 	  lp=new LoginPage(driver);
-	  hp=new HomePage(driver);
+	 // hp=new HomePage(driver);
 	  cp=new ContactsPage(driver);
-	  lp.login(ExcelUtilities.getStringData(0, 0, "LoginPage"),ExcelUtilities.getIntegerData(0, 1, "LoginPage"));
+	 hp= lp.login(ExcelUtilities.getStringData(0, 0, "LoginPage"),ExcelUtilities.getIntegerData(0, 1, "LoginPage"));
 	  hp.clickonusermanagement();
 	  cp.goToSupplierpage();
 	  cp.impcontacts();

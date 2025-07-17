@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results retried="1" ignored="0" total="3" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-07-16T23:14:47 IST" name="TestSuite" finished-at="2025-07-16T23:16:04 IST" duration-ms="76670">
+  <suite started-at="2025-07-17T12:18:32 IST" name="TestSuite" finished-at="2025-07-17T12:19:27 IST" duration-ms="55339">
     <groups>
     </groups>
-    <test started-at="2025-07-16T23:14:47 IST" name="Test" finished-at="2025-07-16T23:16:04 IST" duration-ms="76670">
-      <class name="testclasses.ContactsTest">
-        <test-method is-config="true" signature="createReport()[pri:0, instance:testclasses.ContactsTest@3cfdd820]" started-at="2025-07-16T23:14:47 IST" name="createReport" finished-at="2025-07-16T23:14:47 IST" duration-ms="14" status="PASS">
+    <test started-at="2025-07-17T12:18:32 IST" name="Test" finished-at="2025-07-17T12:19:27 IST" duration-ms="55339">
+      <class name="testclasses.UserManagementTest">
+        <test-method is-config="true" signature="createReport()[pri:0, instance:testclasses.UserManagementTest@6f8e8894]" started-at="2025-07-17T12:18:32 IST" name="createReport" finished-at="2025-07-17T12:18:32 IST" duration-ms="13" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createReport -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testclasses.ContactsTest@3cfdd820]" started-at="2025-07-16T23:14:48 IST" name="beforeMethod" finished-at="2025-07-16T23:15:17 IST" duration-ms="29658" status="PASS">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testclasses.UserManagementTest@6f8e8894]" started-at="2025-07-17T12:18:32 IST" name="beforeMethod" finished-at="2025-07-17T12:18:37 IST" duration-ms="4745" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -22,15 +22,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="verifyReachedSupplierPage()[pri:0, instance:testclasses.ContactsTest@3cfdd820]" started-at="2025-07-16T23:15:17 IST" name="verifyReachedSupplierPage" finished-at="2025-07-16T23:15:28 IST" duration-ms="10782" status="PASS">
+        <test-method signature="verifyForAdduserstext()[pri:0, instance:testclasses.UserManagementTest@6f8e8894]" started-at="2025-07-17T12:18:37 IST" name="verifyForAdduserstext" finished-at="2025-07-17T12:18:47 IST" duration-ms="10306" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyReachedSupplierPage -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testclasses.ContactsTest@3cfdd820]" started-at="2025-07-16T23:15:28 IST" name="afterMethod" finished-at="2025-07-16T23:15:28 IST" duration-ms="376" status="PASS">
+        </test-method> <!-- verifyForAdduserstext -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testclasses.UserManagementTest@6f8e8894]" started-at="2025-07-17T12:18:47 IST" name="afterMethod" finished-at="2025-07-17T12:18:47 IST" duration-ms="366" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testclasses.ContactsTest@3cfdd820]" started-at="2025-07-16T23:15:28 IST" name="beforeMethod" finished-at="2025-07-16T23:15:32 IST" duration-ms="3913" status="PASS">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testclasses.UserManagementTest@6f8e8894]" started-at="2025-07-17T12:18:47 IST" name="beforeMethod" finished-at="2025-07-17T12:18:52 IST" duration-ms="4080" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -41,15 +41,55 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="verifytogetRowCount()[pri:1, instance:testclasses.ContactsTest@3cfdd820]" started-at="2025-07-16T23:15:32 IST" name="verifytogetRowCount" finished-at="2025-07-16T23:15:45 IST" duration-ms="12749" status="PASS">
+        <test-method retried="true" signature="verifynewuserCreated()[pri:1, instance:testclasses.UserManagementTest@6f8e8894]" started-at="2025-07-17T12:18:52 IST" name="verifynewuserCreated" finished-at="2025-07-17T12:19:08 IST" duration-ms="16127" status="SKIP">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at org.testng.Assert.assertTrue(Assert.java:67)
+at testclasses.UserManagementTest.verifynewuserCreated(UserManagementTest.java:54)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifytogetRowCount -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testclasses.ContactsTest@3cfdd820]" started-at="2025-07-16T23:15:45 IST" name="afterMethod" finished-at="2025-07-16T23:15:45 IST" duration-ms="381" status="PASS">
+        </test-method> <!-- verifynewuserCreated -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testclasses.UserManagementTest@6f8e8894]" started-at="2025-07-17T12:19:08 IST" name="afterMethod" finished-at="2025-07-17T12:19:08 IST" duration-ms="350" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testclasses.ContactsTest@3cfdd820]" started-at="2025-07-16T23:15:45 IST" name="beforeMethod" finished-at="2025-07-16T23:15:49 IST" duration-ms="4011" status="PASS">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testclasses.UserManagementTest@6f8e8894]" started-at="2025-07-17T12:19:08 IST" name="beforeMethod" finished-at="2025-07-17T12:19:13 IST" duration-ms="4759" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -60,15 +100,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="verifyFileUploadedfailedmsg()[pri:2, instance:testclasses.ContactsTest@3cfdd820]" started-at="2025-07-16T23:15:49 IST" name="verifyFileUploadedfailedmsg" finished-at="2025-07-16T23:16:04 IST" duration-ms="14356" status="PASS">
+        <test-method signature="verifynewuserCreated()[pri:1, instance:testclasses.UserManagementTest@6f8e8894]" started-at="2025-07-17T12:19:13 IST" name="verifynewuserCreated" finished-at="2025-07-17T12:19:27 IST" duration-ms="14146" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyFileUploadedfailedmsg -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testclasses.ContactsTest@3cfdd820]" started-at="2025-07-16T23:16:04 IST" name="afterMethod" finished-at="2025-07-16T23:16:04 IST" duration-ms="371" status="PASS">
+        </test-method> <!-- verifynewuserCreated -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testclasses.UserManagementTest@6f8e8894]" started-at="2025-07-17T12:19:27 IST" name="afterMethod" finished-at="2025-07-17T12:19:27 IST" duration-ms="362" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-      </class> <!-- testclasses.ContactsTest -->
+      </class> <!-- testclasses.UserManagementTest -->
     </test> <!-- Test -->
   </suite> <!-- TestSuite -->
 </testng-results>

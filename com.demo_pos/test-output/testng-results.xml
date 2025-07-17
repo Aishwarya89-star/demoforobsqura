@@ -1,17 +1,127 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results retried="1" ignored="0" total="3" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="14" passed="14" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-07-17T12:18:32 IST" name="TestSuite" finished-at="2025-07-17T12:19:27 IST" duration-ms="55339">
+  <suite started-at="2025-07-17T12:31:32 IST" name="TestSuite" finished-at="2025-07-17T12:33:58 IST" duration-ms="145834">
     <groups>
+      <group name="Group1">
+        <method signature="LoginPageTest.verifyUnsuccessfulLogin(java.lang.String,java.lang.String)[pri:4, instance:testclasses.LoginPageTest@4bc222e]" name="verifyUnsuccessfulLogin" class="testclasses.LoginPageTest"/>
+      </group> <!-- Group1 -->
+      <group name="Group2">
+        <method signature="LoginPageTest.verifyTitleofthePage()[pri:1, instance:testclasses.LoginPageTest@4bc222e]" name="verifyTitleofthePage" class="testclasses.LoginPageTest"/>
+      </group> <!-- Group2 -->
+      <group name="Groups1">
+        <method signature="HomePageTest.calculatorname()[pri:1, instance:testclasses.HomePageTest@31edaa7d]" name="calculatorname" class="testclasses.HomePageTest"/>
+        <method signature="LoginPageTest.verifyIstheremembermecheckboxenaled()[pri:2, instance:testclasses.LoginPageTest@4bc222e]" name="verifyIstheremembermecheckboxenaled" class="testclasses.LoginPageTest"/>
+        <method signature="LoginPageTest.verifySuccessfulLogin()[pri:3, instance:testclasses.LoginPageTest@4bc222e]" name="verifySuccessfulLogin" class="testclasses.LoginPageTest"/>
+      </group> <!-- Groups1 -->
     </groups>
-    <test started-at="2025-07-17T12:18:32 IST" name="Test" finished-at="2025-07-17T12:19:27 IST" duration-ms="55339">
-      <class name="testclasses.UserManagementTest">
-        <test-method is-config="true" signature="createReport()[pri:0, instance:testclasses.UserManagementTest@6f8e8894]" started-at="2025-07-17T12:18:32 IST" name="createReport" finished-at="2025-07-17T12:18:32 IST" duration-ms="13" status="PASS">
+    <test started-at="2025-07-17T12:31:32 IST" name="Test" finished-at="2025-07-17T12:33:58 IST" duration-ms="145834">
+      <class name="testclasses.ContactsTest">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testclasses.ContactsTest@2bec854f]" started-at="2025-07-17T12:32:13 IST" name="beforeMethod" finished-at="2025-07-17T12:32:17 IST" duration-ms="4783" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifyReachedSupplierPage()[pri:0, instance:testclasses.ContactsTest@2bec854f]" started-at="2025-07-17T12:32:17 IST" name="verifyReachedSupplierPage" finished-at="2025-07-17T12:32:27 IST" duration-ms="9378" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyReachedSupplierPage -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testclasses.ContactsTest@2bec854f]" started-at="2025-07-17T12:32:27 IST" name="afterMethod" finished-at="2025-07-17T12:32:27 IST" duration-ms="323" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testclasses.ContactsTest@2bec854f]" started-at="2025-07-17T12:32:27 IST" name="beforeMethod" finished-at="2025-07-17T12:32:31 IST" duration-ms="3909" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifytogetRowCount()[pri:1, instance:testclasses.ContactsTest@2bec854f]" started-at="2025-07-17T12:32:31 IST" name="verifytogetRowCount" finished-at="2025-07-17T12:32:43 IST" duration-ms="12533" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifytogetRowCount -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testclasses.ContactsTest@2bec854f]" started-at="2025-07-17T12:32:43 IST" name="afterMethod" finished-at="2025-07-17T12:32:44 IST" duration-ms="335" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testclasses.ContactsTest@2bec854f]" started-at="2025-07-17T12:32:44 IST" name="beforeMethod" finished-at="2025-07-17T12:32:48 IST" duration-ms="3885" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifyFileUploadedfailedmsg()[pri:2, instance:testclasses.ContactsTest@2bec854f]" started-at="2025-07-17T12:32:48 IST" name="verifyFileUploadedfailedmsg" finished-at="2025-07-17T12:33:02 IST" duration-ms="14099" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyFileUploadedfailedmsg -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testclasses.ContactsTest@2bec854f]" started-at="2025-07-17T12:33:02 IST" name="afterMethod" finished-at="2025-07-17T12:33:02 IST" duration-ms="335" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- testclasses.ContactsTest -->
+      <class name="testclasses.HomePageTest">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testclasses.HomePageTest@31edaa7d]" started-at="2025-07-17T12:33:02 IST" name="beforeMethod" finished-at="2025-07-17T12:33:06 IST" duration-ms="3963" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifyReachedUserManagementPage()[pri:0, instance:testclasses.HomePageTest@31edaa7d]" started-at="2025-07-17T12:33:06 IST" name="verifyReachedUserManagementPage" finished-at="2025-07-17T12:33:13 IST" duration-ms="6587" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyReachedUserManagementPage -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testclasses.HomePageTest@31edaa7d]" started-at="2025-07-17T12:33:13 IST" name="afterMethod" finished-at="2025-07-17T12:33:13 IST" duration-ms="326" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testclasses.HomePageTest@31edaa7d]" started-at="2025-07-17T12:33:13 IST" name="beforeMethod" finished-at="2025-07-17T12:33:18 IST" duration-ms="4839" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="calculatorname()[pri:1, instance:testclasses.HomePageTest@31edaa7d]" started-at="2025-07-17T12:33:18 IST" name="calculatorname" finished-at="2025-07-17T12:33:26 IST" duration-ms="7856" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- calculatorname -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testclasses.HomePageTest@31edaa7d]" started-at="2025-07-17T12:33:26 IST" name="afterMethod" finished-at="2025-07-17T12:33:26 IST" duration-ms="351" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- testclasses.HomePageTest -->
+      <class name="testclasses.LoginPageTest">
+        <test-method is-config="true" signature="createReport()[pri:0, instance:testclasses.LoginPageTest@4bc222e]" started-at="2025-07-17T12:31:32 IST" name="createReport" finished-at="2025-07-17T12:31:32 IST" duration-ms="18" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createReport -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testclasses.UserManagementTest@6f8e8894]" started-at="2025-07-17T12:18:32 IST" name="beforeMethod" finished-at="2025-07-17T12:18:37 IST" duration-ms="4745" status="PASS">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testclasses.LoginPageTest@4bc222e]" started-at="2025-07-17T12:31:32 IST" name="beforeMethod" finished-at="2025-07-17T12:31:37 IST" duration-ms="4792" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -22,15 +132,186 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="verifyForAdduserstext()[pri:0, instance:testclasses.UserManagementTest@6f8e8894]" started-at="2025-07-17T12:18:37 IST" name="verifyForAdduserstext" finished-at="2025-07-17T12:18:47 IST" duration-ms="10306" status="PASS">
+        <test-method signature="verifyLogoDisplayed()[pri:0, instance:testclasses.LoginPageTest@4bc222e]" started-at="2025-07-17T12:31:37 IST" name="verifyLogoDisplayed" finished-at="2025-07-17T12:31:37 IST" duration-ms="109" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLogoDisplayed -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testclasses.LoginPageTest@4bc222e]" started-at="2025-07-17T12:31:37 IST" name="afterMethod" finished-at="2025-07-17T12:31:37 IST" duration-ms="328" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testclasses.LoginPageTest@4bc222e]" started-at="2025-07-17T12:31:37 IST" name="beforeMethod" finished-at="2025-07-17T12:31:41 IST" duration-ms="3991" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifyTitleofthePage()[pri:1, instance:testclasses.LoginPageTest@4bc222e]" started-at="2025-07-17T12:31:41 IST" name="verifyTitleofthePage" finished-at="2025-07-17T12:31:42 IST" duration-ms="1111" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTitleofthePage -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testclasses.LoginPageTest@4bc222e]" started-at="2025-07-17T12:31:42 IST" name="afterMethod" finished-at="2025-07-17T12:31:43 IST" duration-ms="308" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testclasses.LoginPageTest@4bc222e]" started-at="2025-07-17T12:31:43 IST" name="beforeMethod" finished-at="2025-07-17T12:31:47 IST" duration-ms="3940" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifyIstheremembermecheckboxenaled()[pri:2, instance:testclasses.LoginPageTest@4bc222e]" started-at="2025-07-17T12:31:47 IST" name="verifyIstheremembermecheckboxenaled" finished-at="2025-07-17T12:31:47 IST" duration-ms="61" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyIstheremembermecheckboxenaled -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testclasses.LoginPageTest@4bc222e]" started-at="2025-07-17T12:31:47 IST" name="afterMethod" finished-at="2025-07-17T12:31:47 IST" duration-ms="338" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testclasses.LoginPageTest@4bc222e]" started-at="2025-07-17T12:31:47 IST" name="beforeMethod" finished-at="2025-07-17T12:31:51 IST" duration-ms="3958" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifySuccessfulLogin()[pri:3, instance:testclasses.LoginPageTest@4bc222e]" started-at="2025-07-17T12:31:51 IST" name="verifySuccessfulLogin" finished-at="2025-07-17T12:31:55 IST" duration-ms="3954" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySuccessfulLogin -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testclasses.LoginPageTest@4bc222e]" started-at="2025-07-17T12:31:55 IST" name="afterMethod" finished-at="2025-07-17T12:31:55 IST" duration-ms="426" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testclasses.LoginPageTest@4bc222e]" started-at="2025-07-17T12:31:55 IST" name="beforeMethod" finished-at="2025-07-17T12:31:59 IST" duration-ms="3959" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifyUnsuccessfulLogin(java.lang.String,java.lang.String)[pri:4, instance:testclasses.LoginPageTest@4bc222e]" started-at="2025-07-17T12:31:59 IST" name="verifyUnsuccessfulLogin" data-provider="unsuccessfulLogin" finished-at="2025-07-17T12:32:01 IST" duration-ms="1268" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUnsuccessfulLogin -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testclasses.LoginPageTest@4bc222e]" started-at="2025-07-17T12:32:01 IST" name="afterMethod" finished-at="2025-07-17T12:32:01 IST" duration-ms="308" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testclasses.LoginPageTest@4bc222e]" started-at="2025-07-17T12:32:01 IST" name="beforeMethod" finished-at="2025-07-17T12:32:05 IST" duration-ms="3777" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifyUnsuccessfulLogin(java.lang.String,java.lang.String)[pri:4, instance:testclasses.LoginPageTest@4bc222e]" started-at="2025-07-17T12:32:05 IST" name="verifyUnsuccessfulLogin" data-provider="unsuccessfulLogin" finished-at="2025-07-17T12:32:06 IST" duration-ms="1470" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admi]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123456]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUnsuccessfulLogin -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testclasses.LoginPageTest@4bc222e]" started-at="2025-07-17T12:32:06 IST" name="afterMethod" finished-at="2025-07-17T12:32:07 IST" duration-ms="333" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testclasses.LoginPageTest@4bc222e]" started-at="2025-07-17T12:32:07 IST" name="beforeMethod" finished-at="2025-07-17T12:32:11 IST" duration-ms="4343" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifyUnsuccessfulLogin(java.lang.String,java.lang.String)[pri:4, instance:testclasses.LoginPageTest@4bc222e]" started-at="2025-07-17T12:32:11 IST" name="verifyUnsuccessfulLogin" data-provider="unsuccessfulLogin" finished-at="2025-07-17T12:32:12 IST" duration-ms="1231" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUnsuccessfulLogin -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testclasses.LoginPageTest@4bc222e]" started-at="2025-07-17T12:32:12 IST" name="afterMethod" finished-at="2025-07-17T12:32:13 IST" duration-ms="345" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- testclasses.LoginPageTest -->
+      <class name="testclasses.UserManagementTest">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testclasses.UserManagementTest@26adfd2d]" started-at="2025-07-17T12:33:26 IST" name="beforeMethod" finished-at="2025-07-17T12:33:30 IST" duration-ms="3752" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifyForAdduserstext()[pri:0, instance:testclasses.UserManagementTest@26adfd2d]" started-at="2025-07-17T12:33:30 IST" name="verifyForAdduserstext" finished-at="2025-07-17T12:33:39 IST" duration-ms="8950" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyForAdduserstext -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testclasses.UserManagementTest@6f8e8894]" started-at="2025-07-17T12:18:47 IST" name="afterMethod" finished-at="2025-07-17T12:18:47 IST" duration-ms="366" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testclasses.UserManagementTest@26adfd2d]" started-at="2025-07-17T12:33:39 IST" name="afterMethod" finished-at="2025-07-17T12:33:39 IST" duration-ms="377" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testclasses.UserManagementTest@6f8e8894]" started-at="2025-07-17T12:18:47 IST" name="beforeMethod" finished-at="2025-07-17T12:18:52 IST" duration-ms="4080" status="PASS">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testclasses.UserManagementTest@26adfd2d]" started-at="2025-07-17T12:33:39 IST" name="beforeMethod" finished-at="2025-07-17T12:33:43 IST" duration-ms="4102" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -41,70 +322,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method retried="true" signature="verifynewuserCreated()[pri:1, instance:testclasses.UserManagementTest@6f8e8894]" started-at="2025-07-17T12:18:52 IST" name="verifynewuserCreated" finished-at="2025-07-17T12:19:08 IST" duration-ms="16127" status="SKIP">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1590)
-at org.testng.Assert.assertTrue(Assert.java:57)
-at org.testng.Assert.assertTrue(Assert.java:67)
-at testclasses.UserManagementTest.verifynewuserCreated(UserManagementTest.java:54)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method signature="verifynewuserCreated()[pri:1, instance:testclasses.UserManagementTest@26adfd2d]" started-at="2025-07-17T12:33:43 IST" name="verifynewuserCreated" finished-at="2025-07-17T12:33:57 IST" duration-ms="14040" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifynewuserCreated -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testclasses.UserManagementTest@6f8e8894]" started-at="2025-07-17T12:19:08 IST" name="afterMethod" finished-at="2025-07-17T12:19:08 IST" duration-ms="350" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testclasses.UserManagementTest@6f8e8894]" started-at="2025-07-17T12:19:08 IST" name="beforeMethod" finished-at="2025-07-17T12:19:13 IST" duration-ms="4759" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="verifynewuserCreated()[pri:1, instance:testclasses.UserManagementTest@6f8e8894]" started-at="2025-07-17T12:19:13 IST" name="verifynewuserCreated" finished-at="2025-07-17T12:19:27 IST" duration-ms="14146" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifynewuserCreated -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testclasses.UserManagementTest@6f8e8894]" started-at="2025-07-17T12:19:27 IST" name="afterMethod" finished-at="2025-07-17T12:19:27 IST" duration-ms="362" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testclasses.UserManagementTest@26adfd2d]" started-at="2025-07-17T12:33:57 IST" name="afterMethod" finished-at="2025-07-17T12:33:58 IST" duration-ms="370" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->

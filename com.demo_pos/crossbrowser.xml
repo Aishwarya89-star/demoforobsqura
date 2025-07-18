@@ -17,9 +17,9 @@
   <parameter name="browser" value="Edge"/>
     <classes>
       <class name="testclasses.LoginPageTest"/>
-     <!-- <class name="testclasses.ContactsTest"/>
+      <class name="testclasses.ContactsTest"/>
       <class name="testclasses.HomePageTest"/>
-      <class name="testclasses.UserManagementTest"/>-->
+      <class name="testclasses.UserManagementTest"/>
     </classes>
   </test> <!-- Test -->
   

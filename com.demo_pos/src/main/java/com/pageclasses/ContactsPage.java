@@ -18,6 +18,8 @@ public class ContactsPage {
 	WaitUtilities wait=new WaitUtilities();
 	public ContactsPage(WebDriver driver) {
 		this.driver=driver;
+		
+		
 		PageFactory.initElements(driver, this);
 	
 		

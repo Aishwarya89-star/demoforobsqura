@@ -15,7 +15,7 @@ public class RetryAnalyzer implements IRetryAnalyzer{
 		
 		if(initialRetryCount<maxRetryCount) {
 			initialRetryCount++;
-			return true;//when initial count reaches 1
+			return true;//retry starts
 			
 			
 		}

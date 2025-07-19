@@ -22,7 +22,7 @@ public class TestListener extends BaseClass implements ITestListener {
 
     // Extent Report Declarations
     private static ExtentReports extent = ExtentManager.createInstance(); // This creates a static obj of the ExtentReports class.
-    private static ThreadLocal<ExtentTest> test = new ThreadLocal<>();
+    private static ThreadLocal<ExtentTest> test = new ThreadLocal<>();//each test need object
 
     public synchronized void onStart(ITestContext context) {
         System.out.println("Extent Reports Test Suite started!");

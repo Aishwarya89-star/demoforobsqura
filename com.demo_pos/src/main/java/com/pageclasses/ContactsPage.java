@@ -17,9 +17,9 @@ public class ContactsPage {
 	GeneralUtilities utility=new GeneralUtilities();
 	WaitUtilities wait=new WaitUtilities();
 	public ContactsPage(WebDriver driver) {
-		
-		PageFactory.initElements(driver, this);
 		this.driver=driver;
+		PageFactory.initElements(driver, this);
+	
 		
 		
 	}
